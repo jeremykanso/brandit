@@ -20,21 +20,15 @@ get_header(); ?>
 			<h2>nos réalisations</h2>
 			<div class="title-border"></div>
 			<div id="portfolio">
-				<div class="portfolio-row">
 					<div class="portfolio-elems portfolio-elems-1"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
 					<div class="portfolio-elems portfolio-elems-1"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
 					<div class="portfolio-elems portfolio-elems-1"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				</div>
-				<div class="portfolio-row">
 					<div class="portfolio-elems portfolio-elems-2"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
 					<div class="portfolio-elems portfolio-elems-2"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
 					<div class="portfolio-elems portfolio-elems-2"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				</div>
-				<div class="portfolio-row">
 					<div class="portfolio-elems portfolio-elems-3"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
 					<div class="portfolio-elems portfolio-elems-3"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
 					<div class="portfolio-elems portfolio-elems-3"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				</div>
 			</div>
 		</div>
 		<div id="agency-section">
