@@ -16,7 +16,7 @@
 				<div class="site-branding">
 					<div class="wrap">
 						<?php the_custom_logo(); ?>
-						<div class="site-branding-text">
+						<div class="site-branding-text site-branding-text-front">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">We Ar</a></h1>
 			<?php else : ?>
 				<div class="site-branding site-branding-mini">

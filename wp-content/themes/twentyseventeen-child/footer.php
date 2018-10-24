@@ -39,9 +39,9 @@
 <div id="contactfooter">
 	<a href="/contact.php"><div id="contactbutton">Contactez-nous</div></a>
 	<ul id="sociallinks">
-		<a href="facebook.com"><li id="facebookbutton"><img src="/wp-content/uploads/2018/10/FB.svg" /></li></a>
-		<a href="linkedin.com"><li id="linkedinbutton"><img src="/wp-content/uploads/2018/10/In.svg" /></li></a>
-		<a href="instagram.com"><li id="instagrambutton"><img src="/wp-content/uploads/2018/10/Insta.svg" /></li></a>
+		<a href="facebook.com"><li id="facebookbutton"><img src="/wp-includes/images/FB.svg" /></li></a>
+		<a href="linkedin.com"><li id="linkedinbutton"><img src="/wp-includes/images/In.svg" /></li></a>
+		<a href="instagram.com"><li id="instagrambutton"><img src="/wp-includes/images/Insta.svg" /></li></a>
 	</ul>
 </div>
 
