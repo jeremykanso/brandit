@@ -48,15 +48,16 @@ get_header(); ?>
 </div>
 <div id="agency-icons">
 <div><img src="/wp-includes/images/Brand_activation.svg" height="25" width="25" />Brand Activation</div>
-<div><img src="/wp-includes/images/Advertising.svg" height="25" width="25" />Advertising</div>
+<div><img src="/wp-includes/images/pub.svg" height="25" width="25" />Advertising</div>
 <div><img src="/wp-includes/images/Creation_production.svg" height="25" width="25" />Création & Production</div>
 <div><img src="/wp-includes/images/Digital.svg" height="25" width="25" />Digital</div>
 <div><img src="/wp-includes/images/Business_Development.svg" height="25" width="25" />Business Development</div>
 </div>
 			</div>
 			<div id="clients-container">
+				<div id="clients-title-line"></div>
+				<h3>Quelques <br/><span>clients</span></h3>
 				<div id="clients-sub">
-					<h3>Quelques <br/><span>clients</span></h3>
 					<div id="clients-list"></div>
 				</div>
 			</div>
