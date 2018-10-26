@@ -17,22 +17,22 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div id="portfolio-section">
-			<h2>nos réalisations</h2>
+			<h2 class="front-page-title">nos réalisations</h2>
 			<div class="title-border"></div>
 			<div id="portfolio">
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
+				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
 			</div>
 		</div>
 		<div id="agency-section">
-			<h2>l'agence</h2>
+			<h2 class="front-page-title">l'agence</h2>
 			<div class="title-border"></div>
 			<div id="agency-img"></div>
 			<div id="agency">
@@ -47,13 +47,13 @@ get_header(); ?>
 					</div>
 				</div>
 				<div id="agency-icons">
-					<div class="bloc-competences"><img src="/wp-includes/images/Brand_activation.svg" height="30" width="30" /><span>Brand Activation</span></div>
-					<div class="bloc-competences"><img src="/wp-includes/images/pub.svg" height="30" width="30" /><span>Advertising</span></div>
-					<div class="bloc-competences"><img src="/wp-includes/images/Creation_production.svg" height="30" width="30" /><span>Création & Production</span></div>
-					<div class="bloc-competences"><img src="/wp-includes/images/Digital.svg" height="30" width="30" /><span>Digital</span></div>
-					<div class="bloc-competences"><img src="/wp-includes/images/Business_Development.svg" height="30" width="30" /><span>Business Development</span></div>
+					<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Brand_activation.svg" height="30" width="30" /><span>Brand Activation</span></div>
+					<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/pub.svg" height="30" width="30" /><span>Advertising</span></div>
+					<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Creation_production.svg" height="30" width="30" /><span>Création & Production</span></div>
+					<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Digital.svg" height="30" width="30" /><span>Digital</span></div>
+					<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Business_Development.svg" height="30" width="30" /><span>Business Development</span></div>
 				</div>
-				<a href="/category/expertises/" ><div id="agency-button">
+				<a href="/agence/" ><div id="agency-button">
 					En savoir +
 				</div>
 			</a>

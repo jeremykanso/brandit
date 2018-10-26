@@ -42,6 +42,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  color: #000;
 }
 
 .site-info, .menu-scroll-down {
@@ -57,11 +58,15 @@ h2 {
   font-size:38px;
   font-family: 'Playfair Display', sans-serif;
   color:#e33225;
+
+  letter-spacing: 1.2px;
+}
+
+.front-page-title {
   margin-left:20vw;
   top:-32px;
   position:absolute;
   z-index: 3;
-  letter-spacing: 1.2px;
 }
 
 h2::after {
@@ -184,7 +189,6 @@ h2::after {
               height: auto;
               padding-top: 0;
               position: absolute;
-              width: 80%;
               top: 25%;
               left: 25% !important;
             }
@@ -575,7 +579,7 @@ h2::after {
             top:-10vh;
             width: 75vw;
             z-index:1;
-            background:url("/wp-includes/images/agencyimg.jpg") no-repeat;
+            background:url("/wp-content/themes/twentyseventeen-child/assets/images/agencyimg.jpg") no-repeat;
             background-size: cover;
             min-width: 630px;
             max-width: 1250px;
@@ -602,7 +606,7 @@ h2::after {
             color:#000;
           }
 
-          #agency-text h3 {
+          #agency-text h3, #notre-approche-title span {
             text-transform: uppercase;
             font-size: 24px;
             line-height:25px;
@@ -629,14 +633,14 @@ h2::after {
             max-width:350px;
           }
 
-          #agency-icons {
+          #agency-icons, #expertises-icons, #solutions-icons {
             margin-left:20vw;
             display:flex;
             flex-direction: row;
             flex-wrap: wrap;
           }
 
-          .bloc-competences {
+          .bloc-competences, .bloc-solutions {
             width:30%;
             text-transform: uppercase;
             font-size: 10px;
@@ -645,11 +649,11 @@ h2::after {
             height:30px;
           }
 
-          .bloc-competences div, .bloc-competences img {
+          .bloc-competences > div, .bloc-competences img, .bloc-solutions > div, .bloc-solutions img{
             float:left;
           }
 
-          .bloc-competences span {
+          .bloc-competences span, .bloc-solutions span {
             margin-left: 8px;
             max-width: 80px;
             line-height:12px;
@@ -696,7 +700,7 @@ h2::after {
             left: 25vw;
             top: 36px;
             height: 1px;
-            background: black;
+            background: #000;
             width: 45vw;
             max-width: calc(1150px - 25vw);
             min-width: calc(580px - 25vw);
@@ -736,6 +740,208 @@ h2::after {
             margin-right: auto;
             border-top:none;
           }
+
+          .single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary, .archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary {
+            max-width: none;
+          }
+
+
+          /* PAGES/ARTICLES HEADER */
+          .articles-header {
+            height: 33vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            background: rgba(255,0,0,0.7);
+            z-index: 1;
+          }
+
+          body.page:not(.twentyseventeen-front-page) .entry-title {
+            position:absolute;
+            top:16vh;
+            left: 78px;
+            z-index: 2;
+            color:#fff;
+            font-size: 50px;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 2px;
+          }
+
+          body.page:not(.twentyseventeen-front-page) .entry-title::after {
+            font-family: 'PlayFair Display';
+            content: '.';
+            color: #000;
+            position: absolute;
+          }
+
+
+          /* AGENCY POST */
+
+          #notre-ambition-section {
+            width:80vw;
+            margin-left:auto;
+            margin-right:auto;
+            padding-bottom: 5vh;
+          }
+
+          #notre-approche-section {
+            width:100vw;
+            padding-bottom: calc(10vh + 80px);
+          }
+
+          #notre-approche-subsection {
+            position: relative;
+            width:60vw;
+            padding: 40px 10vw;
+            left:10vw;
+            top:10vh;
+            background:rgba(0,0,0,0.5);
+            font-size: 16px;
+            font-family: 'PlayFair Display';
+            line-height: 28px;
+            color: #fff;
+            z-index:1;
+            min-width: 500px;
+            max-width: 900px;
+          }
+
+          #notre-approche-title {
+            width:380px;
+          }
+
+          #notre-approche-text {
+            max-width:345px;
+          }
+
+          #icons-section {
+            position: relative;
+            width:90vw;
+            left:0;
+            top:-100px;
+            padding-bottom: 200px;
+            background: #e33225;
+            min-width: 700px;
+          }
+
+          #image-section {
+            width:100%;
+            position: relative;
+            height:auto;
+            text-align: center;
+            margin-top:-75px;
+            top:-50px;
+          }
+
+          #image-section img {
+            height:350px;
+          }
+
+          #post-111 h2 {
+            color:#000;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Poppins';
+            margin-bottom:18px;
+          }
+
+          #post-111 h2::after {
+            color:#e33225;
+            font-family: 'PlayFair Display';
+            position: absolute;
+            margin-top:-2px;
+          }
+
+          #notre-approche-subsection h2, #vous-subsection h2, #icons-section h2 {
+            color:#fff;
+          }
+
+
+          #notre-approche-section {
+            background:#fece5f;
+          }
+
+          #notre-ambition-text {
+            font-size: 14px;
+            line-height:28px;
+          }
+
+          .title-border {
+            position:absolute;
+            top:0px;
+            left:0;
+            height:1px;
+            width:calc(5vw - 5px);
+            background: #000;
+            z-index: 3;
+          }
+
+          #icons-subsection{
+            position: relative;
+            left:10vw;
+            top: 100px;
+            width: calc(100% - 10vw);
+          }
+
+          #icons-subsection h2:nth-last-child(2) {
+            margin-top:100px;
+          }
+
+          #icons-section h2 {
+            font-size: 18px;
+            margin-left:10vw;
+          }
+
+          #icons-section h2::after {
+            color: #000;
+            margin-top:0;
+          }
+
+          #expertises-icons, #solutions-icons {
+            margin-left:0;
+          }
+
+          #expertises-icons .bloc-competences {
+            width:20%;
+            margin-top:10px;
+          }
+
+          .bloc-solutions {
+            line-height: 50px;
+            height: 50px;
+            margin-top:10px;
+          }
+
+          .cross-link {
+            position: absolute;
+            margin-left:38px;
+            margin-top:8px;
+            font-size: 16px;
+            line-height: 20px;
+            width:20px;
+            height:20px;
+            font-weight: 300;
+            border:1px solid black;
+            text-align: center;
+          }
+
+          .bloc-solutions .cross-link {
+            margin-left:58px;
+            margin-top:0;
+          }
+
+          #icons-section .bloc-competences span {
+            max-width: 85px;
+            letter-spacing:1.2px;
+          }
+
+          #icons-section .bloc-solutions span {
+            max-width: 100px;
+            letter-spacing:1.2px;
+          }
+
+
 
 
 
