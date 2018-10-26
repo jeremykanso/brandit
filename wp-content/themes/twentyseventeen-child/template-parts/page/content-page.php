@@ -53,6 +53,7 @@
 			</div>
 			</div>
 			<div id="vous-section">
+				<div id="vous-bg-img"></div>
 				<div id="vous-subsection">
 					<h2>Vous</h2>
 					<div id="vous-title"><?php the_field("titre_vous"); ?></div>
@@ -62,6 +63,30 @@
 			</div>
 
 			<div id="team-section">
+				<h2>Team</h2>
+				<div id="team-gallery">
+					<div class="team-guy">
+						<img />
+						<div class="name-guy">Touko Dakpou</div>
+						<div class="title-guy">CEO</div>
+					</div>
+					<div class="team-guy">
+						<img />
+						<div class="name-guy">Ahmed Traore</div>
+						<div class="title-guy">Partnership Manager</div>
+
+					</div>
+					<div class="team-guy">
+						<img />
+						<div class="name-guy">Samuel Eyraud</div>
+						<div class="title-guy">Creative Project Manager</div>
+					</div>
+					<div class="team-guy talent-guy">
+						<img />
+						<div class="name-guy talents">talents</div>
+						<div class="title-guy joinus">JOIN US</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="offices-section">

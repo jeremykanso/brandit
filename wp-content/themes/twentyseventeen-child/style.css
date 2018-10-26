@@ -45,6 +45,10 @@ body {
   color: #000;
 }
 
+.page:not(.home) #content {
+  padding-bottom:0;
+}
+
 .site-info, .menu-scroll-down {
   display: none !important;
 }
@@ -786,12 +790,12 @@ h2::after {
             padding-bottom: 5vh;
           }
 
-          #notre-approche-section {
+          #notre-approche-section, #vous-section {
             width:100vw;
             padding-bottom: calc(10vh + 80px);
           }
 
-          #notre-approche-subsection {
+          #notre-approche-subsection, #vous-subsection {
             position: relative;
             width:60vw;
             padding: 40px 10vw;
@@ -856,7 +860,6 @@ h2::after {
           #notre-approche-subsection h2, #vous-subsection h2, #icons-section h2 {
             color:#fff;
           }
-
 
           #notre-approche-section {
             background:#fece5f;
@@ -948,6 +951,121 @@ h2::after {
             letter-spacing: 1.5px;
           }
 
+          #vous-section {
+            position: relative;
+          }
+
+          #vous-subsection {
+            font-size: 14px;
+            line-height: 24px;
+            width:80vw;
+            max-width: none;
+
+          }
+
+          #vous-title {
+            font-weight: 600;
+            margin-bottom:12px;
+
+          }
+
+          #vous-subtitle {
+            display: inline;
+            background:#e33225;
+            color:#000;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+
+          }
+
+          #vous-text {
+            margin-top:12px;
+          }
+
+          #vous-bg-img {
+            position: absolute;
+            width: 80vw;
+            height: 500px;
+            left: 10vw;
+            bottom: -10vh;
+            margin-bottom: calc(10vh + 80px);
+            background: url("/wp-content/themes/twentyseventeen-child/assets/images/agencyimg.jpg") no-repeat;
+            background-size: cover;
+            min-width: 500px;
+          }
+
+          #team-section {
+            background:#ffc774;
+          }
+
+          #team-section h2 {
+            margin-left:10vw;
+            padding-top:10vh;
+          }
+
+          #team-section h2::after {
+            color:#fff;
+          }
+
+          #team-gallery {
+            display: flex;
+            flex-direction: row;
+            font-family: 'PlayFair Display';
+            align-items: center;
+            justify-content: center;
+          }
+
+          .team-guy {
+            flex:1;
+          }
+
+          .name-guy {
+            color:#fff;
+            font-size: 16px;
+            margin-left:20px;
+          }
+
+          .title-guy {
+            font-style: italic;
+            font-size: 12px;
+            margin-left:20px;
+          }
+
+          .talents {
+            position: relative;
+            color:#e33225;
+            font-size: 22px;
+            z-index: 1;
+          }
+
+          .talents::after{
+            content:".";
+            color:#fff;
+          }
+
+          .joinus {
+            font-family: "Poppins";
+            font-style: normal;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-top:-20px;
+            color:#3012f0;
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -965,6 +1083,11 @@ h2::after {
           /* MEDIA QUERIES */
 
           @media screen and (max-width: 950px) {
+
+            .site-branding {
+              top: 20%;
+              left: 20% !important;
+            }
 
             #footer {
               height:680px; flex-direction: column;
