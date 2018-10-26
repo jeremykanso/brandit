@@ -924,6 +924,12 @@ h2::after {
             font-weight: 300;
             border:1px solid black;
             text-align: center;
+            transition: 0.3s;
+          }
+
+          .cross-link:hover {
+            background: #000;
+            color:#e33225;
           }
 
           .bloc-solutions .cross-link {
@@ -933,13 +939,22 @@ h2::after {
 
           #icons-section .bloc-competences span {
             max-width: 85px;
-            letter-spacing:1.2px;
+            letter-spacing: 1.2px;
           }
 
           #icons-section .bloc-solutions span {
             max-width: 100px;
-            letter-spacing:1.2px;
+            font-size: 11px;
+            letter-spacing: 1.5px;
           }
+
+
+
+
+
+
+
+
 
 
 
@@ -972,6 +987,12 @@ h2::after {
             .portfolio-elems:nth-last-child(1){
               display: none;
             }
+
+            #icons-section .bloc-competences span {
+              max-width: 80px;
+              letter-spacing: normal;
+            }
+
           }
 
           @media screen and (max-height: 650px) {
