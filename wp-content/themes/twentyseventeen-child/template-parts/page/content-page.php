@@ -91,6 +91,20 @@
 
 			<div id="offices-section">
 			</div>
+			<!-- CONTACT POST -->
+		<?php elseif( get_the_ID() == "25" ): ?>
+			<div id="contact-section">
+				<div id="intro-contact">Vous avez un <p>projet</p> ?</div><h3>Bienvenue</h3>
+				<p id="more-intro">Un café ? Un renseignement ? Racontez-nous !</p>
+<div id="contact-subsection">
+<?php the_content(); ?>
+</div>
+			</div>
+
+
+
+
+
 		<?php endif; ?>
 
 

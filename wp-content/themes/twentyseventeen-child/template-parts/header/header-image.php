@@ -21,9 +21,7 @@
 		<div id="redsquaretwo"></div>
 	</div>
 <?php else : ?>
-	<div class="articles-header">
-
-	</div>
+	<div class="articles-header"></div>
 	<?php endif; ?>
 
 

@@ -379,8 +379,7 @@ h2::after {
               font-size: 16px;
             }
 
-            #inputchecknews {
-              /* a designer différemment */
+            .inputchecknews {
               float: left;
               display: block;
               position: relative;
@@ -394,7 +393,7 @@ h2::after {
               user-select: none;
             }
 
-            #inputchecknews input {
+            .inputchecknews input {
               position: absolute;
               opacity: 0;
               cursor: pointer;
@@ -402,34 +401,35 @@ h2::after {
               width: 0;
             }
 
-            #checkmark {
+            .checkmark {
               position: absolute;
               top: 0;
               left: 0;
               height: 18px;
               width: 18px;
               background-color: #FFF;
+              border:1px solid #000;
             }
 
             /*
-            #inputchecknews:hover input ~ #checkmark {
+            .inputchecknews:hover input ~ .checkmark {
             background-color: #ccc;
           }
-          #inputchecknews input:checked ~ #checkmark {
+          .inputchecknews input:checked ~ .checkmark {
           background-color: #2196F3;
           }*/
 
-          #checkmark:after {
+          .checkmark:after {
             content: "";
             position: absolute;
             display: none;
           }
 
-          #inputchecknews input:checked ~ #checkmark:after {
+          .inputchecknews input:checked ~ .checkmark:after {
             display: block;
           }
 
-          #inputchecknews #checkmark:after {
+          .inputchecknews .checkmark:after {
             left: 5px;
             top: 0;
             width: 8px;
@@ -441,12 +441,11 @@ h2::after {
             transform: rotate(45deg);
           }
 
-          #textchecknews {
+          .textchecknews {
             font-size: 9px;
             float: left;
             line-height: 20px;
             margin-bottom: 13px;
-            font
           }
 
           #subscribe, #contactbutton {
@@ -781,7 +780,9 @@ h2::after {
           }
 
 
-          /* AGENCY POST */
+          /* AGENCY POST
+- lignes titres
+           */
 
           #notre-ambition-section {
             width:80vw;
@@ -1054,6 +1055,169 @@ h2::after {
             color:#3012f0;
           }
 
+/* CONTACT POST
+- ajouter un recaptcha éventuellement
+- designer les checkbox
+- ligne titre */
+
+.page-id-25 .articles-header {
+  background: url("/wp-content/themes/twentyseventeen-child/assets/images/Logo_BIS_pink.svg") #e33225 no-repeat right center;
+  background-size: contain;
+}
+
+#contact-section {
+    margin-top: calc(33vh - 25px);
+    width:80%;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 5vh;
+}
+
+#contact-subsection {
+
+}
+
+#intro-contact {
+  font-family: "Poppins";
+  color:#000;
+  font-size: 20px;
+  font-weight: 600;
+  float:left;
+}
+
+#intro-contact p {
+  display: inline-block;
+border-bottom: 4px solid #e33225;
+line-height: 20px;
+}
+
+#contact-section h3 {
+  clear:none;
+  margin-left:4px;
+  display: inline-block;
+  background:#000;
+  color:#fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+    padding: 8px 2px;
+    margin-top: -8px;
+}
+
+#contact-section h3::after{
+  content:".";
+  color:#e33225;
+  font-family: 'PlayFair Display';
+}
+
+#more-intro {
+margin:30px 0;
+margin-bottom:80px;
+font-family: 'PlayFair Display';
+font-size: 13px;
+}
+
+
+
+#contact-subsection label {
+    width: 47.5%;
+    float:left;
+    font-family: 'PlayFair Display';
+font-weight: normal;
+letter-spacing: 4px;
+font-size: 11px;
+margin-bottom:5vh;
+}
+
+#contact-subsection label input {
+  border: none;
+      border-bottom: 1px solid #000;
+      font-size: 16px;
+      padding:4px;
+      color:#e33225;
+      margin-top:8px;
+}
+
+#checkbox-info span, #checkbox-news span, #required-info {
+  font-size: 10px;
+  font-family: "Poppins";
+  letter-spacing: normal;
+  line-height: normal;
+
+}
+
+#checkbox-info > span:last-child, #required-info{
+  display: inline-block;
+  margin-left: 35px;
+}
+
+#contact-subsection textarea {
+  font-size: 12px;
+  color:#e33225;
+  margin-top:8px;
+  border-radius: 0;
+  }
+
+.required-dot {
+  float:right;
+}
+
+#contact-submit {
+  width: 286px;
+  background:#fff;
+  border:2px solid #000;
+  color:#000;
+  font-family: 'Poppins';
+  text-align: center;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 18px;
+  transition: 0.3s;
+  position:relative;
+  left:50%;
+  margin-left:-143px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top:40px;
+}
+
+##contact-submit:hover {
+
+}
+
+#contact-subsection p:nth-of-type(2) label, #contact-subsection p:nth-of-type(4) label {
+margin-left:5%;
+}
+
+#contact-subsection p:nth-of-type(6) label, #contact-subsection p:nth-of-type(5) label, #contact-subsection p:nth-of-type(7) label, #contact-subsection p:nth-of-type(8) label {
+  width:100%;
+  float:right;
+}
+#contact-subsection p:nth-of-type(7) label, #contact-subsection p:nth-of-type(8) label, #contact-subsection p:nth-of-type(6) label {
+margin-bottom:1vh;
+}
+
+#contact-subsection p:nth-last-of-type(1) {
+clear:both;
+  }
+
+  #required-info {
+    float:left;
+  }
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border-width:0 !important;
+}
+
+#checkbox-info .wpcf7-list-item {
+  display: inline;
+}
+
+
+
 
 
 
@@ -1084,7 +1248,7 @@ h2::after {
 
           @media screen and (max-width: 950px) {
 
-            .site-branding {
+            .site-branding:not(.site-branding-mini) {
               top: 20%;
               left: 20% !important;
             }
@@ -1124,3 +1288,9 @@ h2::after {
               line-height: 18px;
             }
           }
+
+/* corrections template sup */
+
+.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+  margin-bottom:0;
+}

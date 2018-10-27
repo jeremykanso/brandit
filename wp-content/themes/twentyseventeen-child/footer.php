@@ -22,8 +22,8 @@
 	<h3>notre newsletter</h3>
 	<form action="">
 	  <input id="inputemail" type="text" name="email" placeholder="Adresse mail"><br>
-		<label id="inputchecknews">
-	  <input type="checkbox" name="checknews"><span id="checkmark"></span></label><span id="textchecknews">Je souhaite m'inscrire à la newsletter de Brand It Solutions</span><br/>
+		<label class="inputchecknews">
+	  <input type="checkbox" name="checknews"><span class="checkmark"></span></label><span class="textchecknews">Je souhaite m'inscrire à la newsletter de Brand It Solutions</span><br/>
 	  <input id="subscribe" type="submit" value="Inscrivez-vous">
 	</form>
 </div>
