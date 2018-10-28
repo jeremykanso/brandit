@@ -91,6 +91,8 @@
 
 			<div id="offices-section">
 			</div>
+
+			
 			<!-- CONTACT POST -->
 		<?php elseif( get_the_ID() == "25" ): ?>
 			<div id="contact-section">
@@ -100,11 +102,6 @@
 <?php the_content(); ?>
 </div>
 			</div>
-
-
-
-
-
 		<?php endif; ?>
 
 

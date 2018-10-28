@@ -53,7 +53,7 @@ body {
   display: none !important;
 }
 
-p, h2, h3{
+p, h2, h3, ul{
   margin:0;
   padding:0;
 }
@@ -760,7 +760,7 @@ h2::after {
             z-index: 1;
           }
 
-          body.page:not(.twentyseventeen-front-page) .entry-title {
+          body.page:not(.twentyseventeen-front-page) .entry-title, .category-title {
             position:absolute;
             top:16vh;
             left: 78px;
@@ -772,13 +772,13 @@ h2::after {
             letter-spacing: 2px;
           }
 
-          body.page:not(.twentyseventeen-front-page) .entry-title::after {
+          body.page:not(.twentyseventeen-front-page) .entry-title::after, .category-title::after {
             font-family: 'PlayFair Display';
             content: '.';
             color: #000;
             position: absolute;
+            margin-top: -2px;
           }
-
 
           /* AGENCY POST
 - lignes titres
@@ -843,7 +843,7 @@ h2::after {
             height:350px;
           }
 
-          #post-111 h2 {
+          #post-111 h2, .yellow-box h3, .bottom-box h3 {
             color:#000;
             font-size: 22px;
             font-weight: 600;
@@ -851,14 +851,14 @@ h2::after {
             margin-bottom:18px;
           }
 
-          #post-111 h2::after {
+          #post-111 h2::after, .yellow-box h3::after, .bottom-box h3::after {
             color:#e33225;
             font-family: 'PlayFair Display';
             position: absolute;
             margin-top:-2px;
           }
 
-          #notre-approche-subsection h2, #vous-subsection h2, #icons-section h2 {
+          #notre-approche-subsection h2, #vous-subsection h2, #icons-section h2, .yellow-box h3, .bottom-box h3 {
             color:#fff;
           }
 
@@ -917,7 +917,7 @@ h2::after {
             margin-top:10px;
           }
 
-          .cross-link {
+          .cross-link, .arrow-link {
             position: absolute;
             margin-left:38px;
             margin-top:8px;
@@ -1216,25 +1216,164 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   display: inline;
 }
 
+/* ARCHIVE PAGE + common design (pour expertises et solutions exclusives)
+- intégrer les ancres en haut
+- à faire pour solutions exlusives
+- title ligne
+ */
 
+.category-solutions-exclusives .articles-header, .category-expertises .articles-header {
+  background: #f4c455;
+}
 
+#top-expertises {
+  background:#fff;
+  position: relative;
+margin-top: calc(33vh - 25px);
+width:80vw;
+margin-left:auto;
+margin-right:auto;
+padding-bottom: 150px;
+}
 
+.arrow-down-img {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 8px;
+    transition: 0.3s;
+}
 
+.arrow-link:hover .arrow-down-img {
+  margin-top:8px;
+}
 
+#top-solutions-exclusives {
 
+}
 
+.category-expertises, .category-solutions-exclusives {
+  position: relative;
+  height:100vh;
+  padding-bottom:0 !important;
+  margin-bottom:10vh;
+  min-height: 800px;
+}
 
+.background-category-item{
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/agencyimg.jpg");
+  position:absolute;
+  width:100%;
+  height:70%;
+  z-index: 0;
+  background-size: cover;
+}
 
+.yellow-box {
+  background:rgba(244,196,85, 0.7);
+  position: absolute;
+  width:60%;
+  height:calc(70% + 40px);
+  padding-left:10%;
+  margin-top: -40px;
+  padding-right:5%;
+min-width: 600px;
+}
 
+.bottom-box {
+  background: black;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  padding-left:10%;
+  padding-top:40px;
+  padding-bottom: 40px;
+}
 
+.entry-header .entry-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  margin:0;
+}
 
+.entry-header .entry-title::after {
+color:#000;
+}
 
+.entry-header {
+  display:flex;
+      align-items: center;
+margin-top: 80px;
+}
 
+.title-icon{
+  margin-right:2vw;
+}
 
+.title-icon img {
+  height:140px;
+}
 
+.title-icon-86 img {
+  margin-left:-14px;
+}
+.yellow-box h3, .bottom-box h3{letter-spacing: 1.2px;}
+.bottom-box h3::after, .yellow-box h3::after {content:".";}
+.bottom-box h3::after {color:#f4c455;}
 
+.objectifs-section ul, .bottom-box ul {
+  font-family: 'PlayFair Display';
+  padding-left:20px;
+  line-height: 24px;
+  font-size: 13px;
+}
 
+.objectifs-section ul li {
+  margin-bottom:16px;
 
+}
+
+.bottom-box ul {
+  font-size: 12px;
+  font-family: "Poppins";
+  color:#fff;
+  text-transform: uppercase;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.category-5 article:nth-of-type(2) .yellow-box {
+  left:10%;
+}
+
+.category-5 article:nth-of-type(3) .yellow-box {
+  left:20%;
+}
+
+.category-5 article:nth-of-type(4) .yellow-box {
+  left:30%;
+}
+
+.category-5 article:nth-of-type(5) .yellow-box {
+  left:40%;
+}
+
+.category-5 article:nth-of-type(2) .bottom-box {
+  padding-left:20%;
+}
+
+.category-5 article:nth-of-type(3) .bottom-box {
+  padding-left:30%;
+}
+
+.category-5 article:nth-of-type(4) .bottom-box {
+  padding-left:40%;
+}
+
+.category-5 article:nth-of-type(5) .bottom-box {
+  padding-left:50%;
+}
 
 
 
@@ -1245,6 +1384,12 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 
           /* MEDIA QUERIES */
+
+          @media screen and (max-width: 750px) {
+            #top-expertises{
+              width:92vw;
+            }
+          }
 
           @media screen and (max-width: 950px) {
 
@@ -1278,6 +1423,14 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
             #icons-section .bloc-competences span {
               max-width: 80px;
               letter-spacing: normal;
+            }
+
+            .category-5 article:nth-of-type(2) .yellow-box, .category-5 article:nth-of-type(3) .yellow-box, .category-5 article:nth-of-type(4) .yellow-box, .category-5 article:nth-of-type(5) .yellow-box {
+              left:0%;
+            }
+
+            .category-5 article:nth-of-type(2) .bottom-box, .category-5 article:nth-of-type(3) .bottom-box, .category-5 article:nth-of-type(4) .bottom-box, .category-5 article:nth-of-type(5) .bottom-box {
+              padding-left:10%;
             }
 
           }
