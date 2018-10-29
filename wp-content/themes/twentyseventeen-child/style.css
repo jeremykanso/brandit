@@ -93,6 +93,10 @@ h2::after {
 
 /* menu */
 
+#responsive-menu {
+      padding-top: 40px !important;
+}
+
 .responsive-menu-button {
   border-radius: 0;
 }
@@ -215,7 +219,7 @@ h2::after {
             }
 
             .custom-logo-link img {
-              max-height: 120px;
+              max-height: 130px;
               background-color:#000;
               padding:18px 20px;
 
@@ -815,6 +819,7 @@ h2::after {
 
           #notre-approche-title {
             width:380px;
+                margin: 10px 0;
           }
 
           #notre-approche-text {
@@ -844,7 +849,7 @@ h2::after {
             height:350px;
           }
 
-          #post-111 h2, .yellow-box h3, .bottom-box h3 {
+          #post-12 h2, .yellow-box h3, .bottom-box h3 {
             color:#000;
             font-size: 22px;
             font-weight: 600;
@@ -852,7 +857,7 @@ h2::after {
             margin-bottom:18px;
           }
 
-          #post-111 h2::after, .yellow-box h3::after, .bottom-box h3::after {
+          #post-12 h2::after, .yellow-box h3::after, .bottom-box h3::after {
             color:#e33225;
             font-family: 'PlayFair Display';
             position: absolute;
@@ -992,8 +997,7 @@ h2::after {
             position: relative;
             z-index:1;
             background:rgba(0,0,0,0.5);
-            padding: 40px 10vw;
-
+    padding: 40px 80px;
           }
 
           #vous-bg-img {
@@ -1085,7 +1089,7 @@ h2::after {
 - designer les checkbox
 - ligne titre */
 
-.page-id-25 .articles-header {
+.page-id-10 .articles-header {
   background: url("/wp-content/themes/twentyseventeen-child/assets/images/Logo_BIS_pink.svg") #e33225 no-repeat right center;
   background-size: contain;
 }
@@ -1173,9 +1177,15 @@ margin-bottom:5vh;
 
 }
 
-#checkbox-info > span:last-child, #required-info{
+#checkbox-info > span:last-child{
   display: inline-block;
   margin-left: 35px;
+}
+
+#required-info{
+  display: inline-block;
+  color: #e33225;
+
 }
 
 #contact-subsection textarea {
@@ -1187,6 +1197,7 @@ margin-bottom:5vh;
 
 .required-dot {
   float:right;
+  color: #e33225;
 }
 
 #contact-submit, #talents-button {
@@ -1229,10 +1240,6 @@ margin-bottom:1vh;
 
 #contact-subsection p:nth-last-of-type(1) {
 clear:both;
-  }
-
-  #required-info {
-    float:left;
   }
 
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
@@ -1290,24 +1297,32 @@ padding-bottom: 150px;
   background-size: cover !important;
 }
 
-.category-item-86 {
+.category-item-14 {
   background:url("/wp-content/themes/twentyseventeen-child/assets/images/brand-activation-img.jpg") no-repeat;
 }
 
-.category-item-88 {
+.category-item-16 {
   background:url("/wp-content/themes/twentyseventeen-child/assets/images/pub-img.jpg");
 }
 
-.category-item-90 {
+.category-item-18 {
   background:url("/wp-content/themes/twentyseventeen-child/assets/images/creation-production-img.jpg");
 }
 
-.category-item-92 {
+.category-item-24 {
   background:url("/wp-content/themes/twentyseventeen-child/assets/images/digital-img.jpg");
 }
 
-.category-item-94 {
+.category-item-22 {
   background:url("/wp-content/themes/twentyseventeen-child/assets/images/business-development-img.jpg");
+}
+
+.category-item-28 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/jeu-img.jpg");
+}
+
+.category-item-26 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/selfie-img.jpg");
 }
 
 .yellow-box {
@@ -1365,11 +1380,14 @@ margin-top: 80px;
 .bottom-box h3::after, .yellow-box h3::after {content:".";}
 .bottom-box h3::after {color:#f4c455;}
 
-.objectifs-section ul, .bottom-box ul {
+.objectifs-section, .bottom-box {
   font-family: 'PlayFair Display';
+  font-size: 13px;
+}
+
+.objectifs-section ul, .bottom-box ul {
   padding-left:20px;
   line-height: 24px;
-  font-size: 13px;
 }
 
 .objectifs-section ul li {
@@ -1387,44 +1405,48 @@ margin-top: 80px;
   -moz-columns: 2;
 }
 
-.category-5 article:nth-of-type(2) .yellow-box {
+.category-2 article:nth-of-type(2) .yellow-box {
   left:10%;
 }
 
-.category-5 article:nth-of-type(3) .yellow-box {
+.category-2 article:nth-of-type(3) .yellow-box {
   left:20%;
 }
 
-.category-5 article:nth-of-type(4) .yellow-box {
+.category-2 article:nth-of-type(4) .yellow-box {
   left:30%;
 }
 
-.category-5 article:nth-of-type(5) .yellow-box {
+.category-2 article:nth-of-type(5) .yellow-box {
   left:40%;
 }
 
-.category-5 article:nth-of-type(2) .bottom-box {
+.category-2 article:nth-of-type(2) .bottom-box {
   padding-left:20%;
 }
 
-.category-5 article:nth-of-type(3) .bottom-box {
+.category-2 article:nth-of-type(3) .bottom-box {
   padding-left:30%;
 }
 
-.category-5 article:nth-of-type(4) .bottom-box {
+.category-2 article:nth-of-type(4) .bottom-box {
   padding-left:40%;
 }
 
-.category-5 article:nth-of-type(5) .bottom-box {
+.category-2 article:nth-of-type(5) .bottom-box {
   padding-left:50%;
 }
 
 /* Mainly solutions exclusives post ci-dessous */
 
+#top-solutions-exclusives {
+  padding-bottom: 300px;
+}
+
 .bloc-solutions-bis {
   height:120px;
   line-height:normal;
-  background:green;
+  width:50%;
 }
 
 .bloc-solutions-bis span {
@@ -1443,19 +1465,99 @@ margin-top: 80px;
 
 
 
+#post-26 .yellow-box, #post-28 .yellow-box {
+  margin-top: -110px;
+  height: calc(70% + 110px);
+}
+
+#post-26 .entry-header, #post-28 .entry-header {
+  width:90vw;
+}
+
+.title-icon-28, .title-icon-26 {
+  display: flex;
+      align-items: center;
+}
 
 
+.title-icon-28 img, .title-icon-26 img {
+  height:60px;
+  margin-right:2vw;
+}
 
+.title-icon-28 .entry-title, .title-icon-26 .entry-title {
+color:#000;
+}
 
+.title-icon-28 .entry-title::after, .title-icon-26 .entry-title::after {
+color:#f4c555;
+}
 
+.category-3 article:nth-of-type(2) .yellow-box {
+  left:40%;
+}
+.category-3 article:nth-of-type(2) .objectifs-solutions{
+margin-left: calc(62px + 2vw);
+}
+.objectifs-solutions h3::after {
+  color:#000;
+}
 
+.bottom-solutions {
+  display: flex;
+  padding:0;
+  height: 320px;
+}
 
+.bottom-solutions div {
+  flex:1;
+  height:100%;
+  text-align: center;
+}
 
+.bottom-solutions img {
+  height: 100%;
+max-width: 100%;
+padding:10px;
+}
 
+.img-bottom-one {
+  background: #fa69a9;
+}
 
+.img-bottom-two {
+  background: #ff9d42;
+}
 
+.img-bottom-three {
+  background: #ff4a50;
+}
 
+.img-bottom-four {
+  background: #cc5eec;
+}
 
+.category-3 article:nth-of-type(2) .img-bottom-one {
+  background: #90c6ff;
+}
+
+.category-3 article:nth-of-type(2) .img-bottom-two {
+  background: #dce029;
+}
+
+.category-3 article:nth-of-type(2) .img-bottom-three {
+  background: #8a26f8;
+}
+
+.category-3 article:nth-of-type(2) .img-bottom-four {
+  background: #7ce1e6;
+}
+
+.subbottom-interested {
+  width:100%;
+  background: #f4c555;
+  height:200px;
+}
 
 
 
@@ -1501,12 +1603,16 @@ margin-top: 80px;
               letter-spacing: normal;
             }
 
-            .category-5 article:nth-of-type(2) .yellow-box, .category-5 article:nth-of-type(3) .yellow-box, .category-5 article:nth-of-type(4) .yellow-box, .category-5 article:nth-of-type(5) .yellow-box {
+            .category-2 article:nth-of-type(2) .yellow-box, .category-2 article:nth-of-type(3) .yellow-box, .category-2 article:nth-of-type(4) .yellow-box, .category-2 article:nth-of-type(5) .yellow-box {
               left:0%;
             }
 
-            .category-5 article:nth-of-type(2) .bottom-box, .category-5 article:nth-of-type(3) .bottom-box, .category-5 article:nth-of-type(4) .bottom-box, .category-5 article:nth-of-type(5) .bottom-box {
+            .category-2 article:nth-of-type(2) .bottom-box, .category-2 article:nth-of-type(3) .bottom-box, .category-2 article:nth-of-type(4) .bottom-box, .category-2 article:nth-of-type(5) .bottom-box {
               padding-left:10%;
+            }
+
+            .category-3 article:nth-of-type(2) .yellow-box {
+              left:0%;
             }
 
           }
@@ -1522,4 +1628,12 @@ margin-top: 80px;
 
 .page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
   margin-bottom:0;
+}
+
+.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments{
+  width:100%;
+}
+
+body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.error404 #primary .page-header, body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header{
+  width:0%;
 }

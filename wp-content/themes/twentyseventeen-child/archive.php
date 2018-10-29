@@ -17,7 +17,6 @@ $cat = get_the_category();
 $cat = $cat[0]; ?>
 
 <div>
-
 	<?php if ( have_posts() ) : ?>
 		<header class="page-header"><?php
 				echo single_term_title('<h1 class="category-title">','</h1>');	?></header><!-- .page-header -->

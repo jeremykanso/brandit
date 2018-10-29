@@ -63,7 +63,7 @@ get_header(); ?>
 				<h3>Quelques <br/><span>clients</span></h3>
 				<div id="clients-sub">
 					<div id="clients-list">
-						<?php echo do_shortcode("[slide-anything id='151']"); ?>
+						<?php echo do_shortcode("[slide-anything id='6']"); ?>
 
 				</div>
 				</div>

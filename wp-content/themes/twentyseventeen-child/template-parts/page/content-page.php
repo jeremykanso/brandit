@@ -20,7 +20,7 @@
 	<div class="entry-content">
 
 		<!-- AGENCY POST -->
-		<?php if( get_the_ID() == "111" ): ?>
+		<?php if( get_the_ID() == "12" ): ?>
 			<div id="image-section">
 				<img src="/wp-content/themes/twentyseventeen-child/assets/images/office-picture.jpg" />
 			</div>
@@ -98,7 +98,7 @@
 
 
 			<!-- CONTACT POST -->
-		<?php elseif( get_the_ID() == "25" ): ?>
+		<?php elseif( get_the_ID() == "10" ): ?>
 			<div id="contact-section">
 				<div id="intro-contact">Vous avez un <p>projet</p> ?</div><h3>Bienvenue</h3>
 				<p id="more-intro">Un café ? Un renseignement ? Racontez-nous !</p>
