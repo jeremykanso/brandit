@@ -113,6 +113,7 @@ if ( is_single() ) {
 ?>
 
 <?php elseif($cat->cat_name == "solutions exclusives"): echo "test2"; ?>
+
 <?php endif; ?>
 
 </article><!-- #post-## -->

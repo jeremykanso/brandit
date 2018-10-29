@@ -53,12 +53,14 @@
 			</div>
 			</div>
 			<div id="vous-section">
-				<div id="vous-bg-img"></div>
 				<div id="vous-subsection">
+					<div id="vous-bg-img"></div>
+					<div id="vous-content">
 					<h2>Vous</h2>
 					<div id="vous-title"><?php the_field("titre_vous"); ?></div>
 					<div id="vous-subtitle"><?php the_field("sous_titre_vous"); ?></div>
 					<div id="vous-text"><?php the_field("texte_vous"); ?></div>
+				</div>
 				</div>
 			</div>
 
@@ -66,33 +68,35 @@
 				<h2>Team</h2>
 				<div id="team-gallery">
 					<div class="team-guy">
-						<img />
+						<img src="<?php the_field("photo_team_one"); ?>" />
 						<div class="name-guy">Touko Dakpou</div>
 						<div class="title-guy">CEO</div>
 					</div>
 					<div class="team-guy">
-						<img />
+						<img src="<?php the_field("photo_team_two"); ?>" />
 						<div class="name-guy">Ahmed Traore</div>
 						<div class="title-guy">Partnership Manager</div>
 
 					</div>
 					<div class="team-guy">
-						<img />
+						<img src="<?php the_field("photo_team_three"); ?>" />
 						<div class="name-guy">Samuel Eyraud</div>
 						<div class="title-guy">Creative Project Manager</div>
 					</div>
 					<div class="team-guy talent-guy">
-						<img />
+						<img src="/wp-content/themes/twentyseventeen-child/assets/images/team-vous.png" />
 						<div class="name-guy talents">talents</div>
 						<div class="title-guy joinus">JOIN US</div>
 					</div>
 				</div>
+				<a href="/contact" style="box-shadow: none;
+    display: inline-block;"><div id="talents-button">Brand It Talents</div></a>
 			</div>
 
 			<div id="offices-section">
 			</div>
 
-			
+
 			<!-- CONTACT POST -->
 		<?php elseif( get_the_ID() == "25" ): ?>
 			<div id="contact-section">

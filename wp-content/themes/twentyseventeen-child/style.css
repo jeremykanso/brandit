@@ -782,6 +782,7 @@ h2::after {
 
           /* AGENCY POST
 - lignes titres
+-responsiviser manuellement pour #bg-vous
            */
 
           #notre-ambition-section {
@@ -863,8 +864,9 @@ h2::after {
           }
 
           #notre-approche-section {
-            background:#fece5f;
-          }
+            background: url("/wp-content/themes/twentyseventeen-child/assets/images/bg-notre-approche.jpg") #fece5f no-repeat;
+            background-size: contain;
+            }
 
           #notre-ambition-text {
             font-size: 14px;
@@ -959,8 +961,10 @@ h2::after {
           #vous-subsection {
             font-size: 14px;
             line-height: 24px;
-            width:80vw;
+            /*width:80vw;*/ width:800px;
             max-width: none;
+            padding:0;
+            left:10vw;
 
           }
 
@@ -984,20 +988,30 @@ h2::after {
             margin-top:12px;
           }
 
+          #vous-content {
+            position: relative;
+            z-index:1;
+            background:rgba(0,0,0,0.5);
+            padding: 40px 10vw;
+
+          }
+
           #vous-bg-img {
             position: absolute;
-            width: 80vw;
-            height: 500px;
-            left: 10vw;
-            bottom: -10vh;
-            margin-bottom: calc(10vh + 80px);
-            background: url("/wp-content/themes/twentyseventeen-child/assets/images/agencyimg.jpg") no-repeat;
+            top:-58px;
+            left:0;
+            z-index: 0;
+            width: 100%;
+            height:calc(100% + 58px);
+            background: url("/wp-content/themes/twentyseventeen-child/assets/images/bg-vous.jpg") no-repeat;
             background-size: cover;
-            min-width: 500px;
+          /*  min-width: 500px; */
+            width:800px;
           }
 
           #team-section {
             background:#ffc774;
+            padding-bottom: 80px;
           }
 
           #team-section h2 {
@@ -1015,29 +1029,35 @@ h2::after {
             font-family: 'PlayFair Display';
             align-items: center;
             justify-content: center;
+            padding-bottom:80px;
           }
 
           .team-guy {
             flex:1;
+            text-align: center;
           }
 
           .name-guy {
             color:#fff;
-            font-size: 16px;
+            font-size: 20px;
             margin-left:20px;
+            text-align: left;
+            margin-top: -20px;
           }
 
           .title-guy {
             font-style: italic;
-            font-size: 12px;
+            font-size: 16px;
             margin-left:20px;
+            text-align: left;
           }
 
           .talents {
             position: relative;
             color:#e33225;
-            font-size: 22px;
+            font-size: 28px;
             z-index: 1;
+            margin-top:-30px;
           }
 
           .talents::after{
@@ -1048,11 +1068,16 @@ h2::after {
           .joinus {
             font-family: "Poppins";
             font-style: normal;
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 600;
             letter-spacing: 2px;
-            margin-top:-20px;
+            margin-top:-24px;
             color:#3012f0;
+          }
+
+          #talents-button {
+          position: absolute !important;
+          margin-top:0 !important;
           }
 
 /* CONTACT POST
@@ -1164,9 +1189,9 @@ margin-bottom:5vh;
   float:right;
 }
 
-#contact-submit {
+#contact-submit, #talents-button {
   width: 286px;
-  background:#fff;
+  background:transparent;
   border:2px solid #000;
   color:#000;
   font-family: 'Poppins';
@@ -1182,10 +1207,12 @@ margin-bottom:5vh;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top:40px;
+  padding: 1em 2em;
 }
 
-##contact-submit:hover {
-
+#contact-submit:hover, #talents-button:hover {
+  background:#000;
+  color:#fff;
 }
 
 #contact-subsection p:nth-of-type(2) label, #contact-subsection p:nth-of-type(4) label {
@@ -1226,7 +1253,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background: #f4c455;
 }
 
-#top-expertises {
+#top-expertises, #top-solutions-exclusives {
   background:#fff;
   position: relative;
 margin-top: calc(33vh - 25px);
@@ -1247,10 +1274,6 @@ padding-bottom: 150px;
   margin-top:8px;
 }
 
-#top-solutions-exclusives {
-
-}
-
 .category-expertises, .category-solutions-exclusives {
   position: relative;
   height:100vh;
@@ -1260,12 +1283,31 @@ padding-bottom: 150px;
 }
 
 .background-category-item{
-  background:url("/wp-content/themes/twentyseventeen-child/assets/images/agencyimg.jpg");
   position:absolute;
   width:100%;
   height:70%;
   z-index: 0;
-  background-size: cover;
+  background-size: cover !important;
+}
+
+.category-item-86 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/brand-activation-img.jpg") no-repeat;
+}
+
+.category-item-88 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/pub-img.jpg");
+}
+
+.category-item-90 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/creation-production-img.jpg");
+}
+
+.category-item-92 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/digital-img.jpg");
+}
+
+.category-item-94 {
+  background:url("/wp-content/themes/twentyseventeen-child/assets/images/business-development-img.jpg");
 }
 
 .yellow-box {
@@ -1278,6 +1320,8 @@ padding-bottom: 150px;
   padding-right:5%;
 min-width: 600px;
 }
+
+/* Mainly expertises post ci-dessous */
 
 .bottom-box {
   background: black;
@@ -1374,6 +1418,38 @@ margin-top: 80px;
 .category-5 article:nth-of-type(5) .bottom-box {
   padding-left:50%;
 }
+
+/* Mainly solutions exclusives post ci-dessous */
+
+.bloc-solutions-bis {
+  height:120px;
+  line-height:normal;
+  background:green;
+}
+
+.bloc-solutions-bis span {
+  margin-left:0;
+  max-width: none;
+  color:#f4c555;
+  font-size: 24px;
+  text-transform: none;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.bloc-solutions-bis img {
+  float:none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

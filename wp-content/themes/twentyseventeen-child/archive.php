@@ -34,8 +34,14 @@ $cat = $cat[0]; ?>
 				<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Business_Development.svg" height="30" width="30" /><span>Business Development</span><a href="/category/expertises/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
 			</div>
 		</div>
-	<?php elseif($cat->cat_name == "solutions exclusives"): echo "test2"; ?>
-		
+	<?php elseif($cat->cat_name == "solutions exclusives"): ?>
+		<div id="top-solutions-exclusives">
+		<div id="solutions-icons">
+			<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu.svg" height="120" width="120" /><br/><span>Borne de jeu<br/>interactive</span><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+			<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie.svg" height="120" width="120" /><br/><span>Borne<br/>selfie</span><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+		</div>
+	</div>
+
 	<?php endif; ?>
 		<?php
 		if ( have_posts() ) : ?>
