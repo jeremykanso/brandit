@@ -131,9 +131,16 @@ if ( is_single() ) {
 
 <?php elseif ($cat->cat_name == "case studies"): ?>
 
-<?php the_field("mini_case_study"); ?>
-<?php the_field("background_image_case_study"); ?>
-<?php the_field("sous_titre_case_study"); ?>
+	<div id="top-cover-case-study">
+		<div id="titles-block">
+		<?php	the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<h2><?php the_field("sous_titre_case_study"); ?></h2>
+		</div>
+	<div id="background-case-study" style="background-image:url('<?php the_field("background_image_case_study"); ?>')">
+	</div>
+	</div>
+
+
 <?php the_field("titre_client"); ?>
 <?php the_field("texte_client"); ?>
 <?php the_field("couleur_background_client"); ?>
@@ -144,6 +151,11 @@ if ( is_single() ) {
 <?php the_field("couleur_background_territoire"); ?>
 <?php the_field("carousel_case_study"); ?>
 
+
+
+
+
+<?php the_field("mini_case_study"); // TO DO : intégrer en page d'accueil ?>
 
 
 <?php endif; ?>
