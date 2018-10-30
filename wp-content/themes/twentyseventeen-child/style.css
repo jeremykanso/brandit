@@ -656,11 +656,11 @@ h2::after {
             height:30px;
           }
 
-          .bloc-competences > div, .bloc-competences img, .bloc-solutions > div, .bloc-solutions img{
+          .bloc-competences > div, .bloc-competences img, .bloc-solutions .arrow-link, .bloc-solutions img{
             float:left;
           }
 
-          .bloc-competences span, .bloc-solutions span {
+          .bloc-competences span {
             margin-left: 8px;
             max-width: 80px;
             line-height:12px;
@@ -1200,7 +1200,7 @@ margin-bottom:5vh;
   color: #e33225;
 }
 
-#contact-submit, #talents-button {
+#contact-submit, #talents-button, .interested-button {
   width: 286px;
   background:transparent;
   border:2px solid #000;
@@ -1221,7 +1221,7 @@ margin-bottom:5vh;
   padding: 1em 2em;
 }
 
-#contact-submit:hover, #talents-button:hover {
+#contact-submit:hover, #talents-button:hover, .interested-button:hover {
   background:#000;
   color:#fff;
 }
@@ -1285,8 +1285,13 @@ padding-bottom: 150px;
   position: relative;
   height:100vh;
   padding-bottom:0 !important;
-  margin-bottom:10vh;
+  margin-bottom:130px;
   min-height: 800px;
+}
+
+.category-solutions-exclusives {
+  height:calc(100vh + 200px);
+  min-height: calc(800px + 200px);
 }
 
 .background-category-item{
@@ -1449,25 +1454,54 @@ margin-top: 80px;
   width:50%;
 }
 
-.bloc-solutions-bis span {
+.bloc-solutions-text {
   margin-left:0;
   max-width: none;
   color:#f4c555;
-  font-size: 24px;
+  font-size: 30px;
   text-transform: none;
-  line-height: 30px;
-  font-weight: normal;
+  line-height: 40px;
+  font-family: 'PlayFair Display';
+}
+
+.bloc-solutions-bis span {
+border-bottom:3px solid #f4c555;
+color:#000;
 }
 
 .bloc-solutions-bis img {
   float:none;
 }
 
+.bloc-solutions-bis .arrow-link {
+margin-left:0;
+width:40px;
+height:40px;
+line-height: 40px;
+margin-top:10px;
+
+}
+
+.bloc-solutions-bis .arrow-down-img {
+  width:10px;
+  margin-left: 2px;
+  margin-top:0;
+  transition: 0.3s;
+
+}
+
+.bloc-solutions-bis .arrow-link:hover .arrow-down-img {
+    margin-top: 20px;
+}
 
 
 #post-26 .yellow-box, #post-28 .yellow-box {
   margin-top: -110px;
-  height: calc(70% + 110px);
+  height: calc(70% + 110px - 200px);
+}
+
+.category-solutions-exclusives .background-category-item {
+  height:calc(70% - 200px);
 }
 
 #post-26 .entry-header, #post-28 .entry-header {
@@ -1507,6 +1541,7 @@ margin-left: calc(62px + 2vw);
   display: flex;
   padding:0;
   height: 320px;
+  top:calc(70% - 200px);
 }
 
 .bottom-solutions div {
@@ -1557,6 +1592,26 @@ padding:10px;
   width:100%;
   background: #f4c555;
   height:200px;
+  position: absolute;
+  top:calc(70% - 200px + 320px);
+  left:0;
+  text-align: center;
+}
+
+.title-interested {
+  margin-top:40px;
+  color:#fff;
+  font-family: "PlayFair Display";
+  font-size:24px;
+  letter-spacing: 2px;
+}
+
+.title-interested span {
+  background:#000;
+}
+
+.title-interested span:nth-child(2) {
+  background:transparent;
 }
 
 

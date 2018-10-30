@@ -36,8 +36,8 @@ $cat = $cat[0]; ?>
 	<?php elseif($cat->cat_name == "solutions exclusives"): ?>
 		<div id="top-solutions-exclusives">
 		<div id="solutions-icons">
-			<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu.svg" height="120" width="120" /><br/><span>Borne de jeu<br/>interactive</span><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
-			<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie.svg" height="120" width="120" /><br/><span>Borne<br/>selfie</span><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+			<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu.svg" height="120" width="120" /><br/><div class="bloc-solutions-text"><span>Born</span>e de jeu<br/>inter<span>active</span></div><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+			<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie.svg" height="120" width="120" /><br/><div class="bloc-solutions-text">Bor<span>ne</span><br/>selfi<span>e</span></div><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
 		</div>
 	</div>
 

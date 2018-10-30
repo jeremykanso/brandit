@@ -119,6 +119,8 @@ if ( is_single() ) {
 	</div>
 </div>
 <div class="subbottom-interested">
+	<div class="title-interested"><span>Intéressé</span> par cette solution <span style="color:#000">?</span></div>
+	<a href="/contact/"><div class="interested-button">Contactez-nous</div></a>
 </div>
 
 <?php endif; ?>
