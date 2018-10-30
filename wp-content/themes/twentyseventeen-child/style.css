@@ -489,7 +489,7 @@ h2::after {
           #adresse{
             text-transform: uppercase;
             font-size: 11px;
-            margin-bottom:20px;
+            margin-bottom:10px;
           }
 
           #copyright {
@@ -1496,8 +1496,8 @@ margin-top:10px;
 
 
 #post-26 .yellow-box, #post-28 .yellow-box {
-  margin-top: -110px;
-  height: calc(70% + 110px - 200px);
+  margin-top: -80px;
+  height: calc(70% + 80px - 200px);
 }
 
 .category-solutions-exclusives .background-category-item {
@@ -1613,6 +1613,35 @@ padding:10px;
 .title-interested span:nth-child(2) {
   background:transparent;
 }
+
+/* CASE STUDY POST */
+
+.nav-title-icon-wrapper {
+position:absolute;
+z-index:2;
+right:4px;
+top:28px;
+width:50px;
+height:50px;
+background: #fff;
+line-height:50px;
+transition: 0.3s;
+}
+
+.nav-links div:nth-child(2) .nav-title-icon-wrapper {
+  top:84px;
+}
+
+
+.nav-title-icon-wrapper:hover {
+background:#000;
+  }
+
+  .nav-title-icon-wrapper:hover svg {
+    fill:#fff;
+  }
+
+
 
 
 

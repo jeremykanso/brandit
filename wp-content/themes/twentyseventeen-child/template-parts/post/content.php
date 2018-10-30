@@ -16,7 +16,11 @@
 $cat = get_the_category();
 $cat = $cat[0]; ?>
 
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php if ($cat->cat_name != "case studies"): ?>
+
 	<div class="background-category-item category-item-<?php the_ID(); ?>"></div>
 	<div class="yellow-box">
 		<header class="entry-header">
@@ -122,6 +126,25 @@ if ( is_single() ) {
 	<div class="title-interested"><span>Intéressé</span> par cette solution <span style="color:#000">?</span></div>
 	<a href="/contact/"><div class="interested-button">Contactez-nous</div></a>
 </div>
+
+<?php endif; ?>
+
+<?php elseif ($cat->cat_name == "case studies"): ?>
+
+<?php the_field("mini_case_study"); ?>
+<?php the_field("background_image_case_study"); ?>
+<?php the_field("sous_titre_case_study"); ?>
+<?php the_field("titre_client"); ?>
+<?php the_field("texte_client"); ?>
+<?php the_field("couleur_background_client"); ?>
+<?php the_field("background_image_client"); ?>
+<?php the_field("territoire"); ?>
+<?php the_field("brief"); ?>
+<?php the_field("actions"); ?>
+<?php the_field("couleur_background_territoire"); ?>
+<?php the_field("carousel_case_study"); ?>
+
+
 
 <?php endif; ?>
 
