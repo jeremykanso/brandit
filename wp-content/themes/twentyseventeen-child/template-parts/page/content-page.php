@@ -94,7 +94,40 @@
 			</div>
 
 			<div id="offices-section">
+				<div id="office-top">
+				<h2>Bureaux</h2>
+				<div class="title-border"></div>
 			</div>
+			<div id="map-supcontainer">
+				<div class="map-container">
+					<div id="map"></div>
+					<div class="title-map">
+					<h3>France</h3>
+					<span>2 rue d’Oran</span>
+						<span>69001 Lyon</span>
+					<div class="design-block"></div>
+				</div>
+				</div>
+				<div class="map-container">
+					<div id="map2"></div>
+					<div class="title-map">
+					<h3>Cameroun</h3>
+					<span>69, rue 1080 Yvi</span>
+						<span>Bonanjo - Douala</span>
+					<div class="design-block"></div>
+				</div>
+				</div>
+				<div class="map-container">
+					<div id="map3"></div>
+					<div class="title-map">
+					<h3>Belgique</h3>
+					<span>Place de la Bourse 3551</span>
+						<span>1000 Bruxelles</span>
+					<div class="design-block"></div>
+				</div>
+			</div>
+		</div>
+		</div>
 
 
 			<!-- CONTACT POST -->

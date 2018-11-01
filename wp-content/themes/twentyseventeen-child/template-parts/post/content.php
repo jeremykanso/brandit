@@ -91,11 +91,14 @@ $cat = $cat[0]; ?>
 </header><!-- .entry-header -->
 <div class="objectifs-section">
 	<h3>Objectifs</h3>
+	<div class="title-border"></div>
 	<?php the_field("objectifs_de_lexpertise"); ?>
 </div>
+<div class="bottom-line"></div>
 </div>
 <div class="bottom-box">
 	<h3>Services</h3>
+	<div class="title-border"></div>
 	<?php the_field("services_expertise"); ?>
 </div>
 
@@ -105,6 +108,7 @@ $cat = $cat[0]; ?>
 </header><!-- .entry-header -->
 <div class="objectifs-section objectifs-solutions">
 	<h3>Présentation</h3>
+	<div class="title-border"></div>
 	<?php the_field("texte_solutions_exclusives"); ?>
 </div>
 </div>

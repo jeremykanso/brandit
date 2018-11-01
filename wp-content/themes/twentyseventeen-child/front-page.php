@@ -32,9 +32,11 @@ get_header(); ?>
 					$i = 0;
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
-						$the_actual_field = get_field('mini_case_study');
+						$actual_mini_img = get_field('mini_case_study');
 						$actual_perma = get_permalink();
-						echo	"<div class='portfolio-elems'><a href='$actual_perma'><img src='$the_actual_field'/></a></div>";
+						$actual_title = get_the_title();
+						$actual_type = get_field("type_case_study");
+						echo	"<div class='portfolio-elems'><a href='$actual_perma'><h2>$actual_type</h2><h3>$actual_title</h3><img src='$actual_mini_img'/></a></div>";
 					}
 				}
 				?>

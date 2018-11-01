@@ -179,17 +179,27 @@
 	$( document ).ready( function() {
 		$(".home .responsive-menu-button").css("right","4px");
 
+var run = false;
+var runbis = false;
+
 		$( window ).scroll(function() {
 if ($(window).scrollTop() > 0) {
+	if (!run) {
 	$(".sticky-site-branding").css("height", "60px");
 	$(".home .responsive-menu-button").css("top", "4px");
-
+	 run = true;
+	 runbis= false;
+ }
 }
 
 else {
+	if (!runbis) {
+
 	$(".sticky-site-branding").css("height", "0px");
 	$(".home .responsive-menu-button").css("top", "80px");
-
+	 runbis = true;
+	 run = false;
+}
 }
 
 

@@ -30,8 +30,8 @@ get_header(); ?>
 // TO DO : modifier le design de ce truc
 				the_post_navigation( array(
 					'in_same_term' => true,
-					'prev_text' => '<span class="nav-title-icon-wrapper nav-prev-case-study">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '',
-					'next_text' => '<span class="nav-title-icon-wrapper nav-next-case-study">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ) . '',
+					'prev_text' => '<span class="nav-title-icon-wrapper nav-prev-case-study">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ) . '',
+					'next_text' => '<span class="nav-title-icon-wrapper nav-next-case-study">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '',
 				) );
 
 				/* original shit
