@@ -177,6 +177,27 @@
 
 	// Fire on document ready.
 	$( document ).ready( function() {
+		$(".home .responsive-menu-button").css("right","4px");
+
+		$( window ).scroll(function() {
+if ($(window).scrollTop() > 0) {
+	$(".sticky-site-branding").css("height", "60px");
+	$(".home .responsive-menu-button").css("top", "4px");
+
+}
+
+else {
+	$(".sticky-site-branding").css("height", "0px");
+	$(".home .responsive-menu-button").css("top", "80px");
+
+}
+
+
+
+});
+
+
+
 
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
 		if ( $navigation.length ) {

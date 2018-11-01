@@ -29,18 +29,18 @@ $cat = $cat[0]; ?>
 			<?php	if ($cat->cat_name == "expertises"): ?>
 				<div id="top-expertises">
 					<div id="expertises-icons">
-						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Brand_activation.svg" height="30" width="30" /><span>Brand Activation</span><a href="/category/expertises/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
-						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/pub.svg" height="30" width="30" /><span>Advertising</span><a href="/category/expertises/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
-						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Creation_production.svg" height="30" width="30" /><span>Création & Production</span><a href="/category/expertises/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
-						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Digital.svg" height="30" width="30" /><span>Digital</span><a href="/category/expertises/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
-						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Business_Development.svg" height="30" width="30" /><span>Business Development</span><a href="/category/expertises/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Brand_activation.svg" height="30" width="30" /><span>Brand Activation</span><a href="#anchor1"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/pub.svg" height="30" width="30" /><span>Advertising</span><a href="#anchor2"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Creation_production.svg" height="30" width="30" /><span>Création & Production</span><a href="#anchor3"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Digital.svg" height="30" width="30" /><span>Digital</span><a href="#anchor4"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-competences"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Business_Development.svg" height="30" width="30" /><span>Business Development</span><a href="#anchor5"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
 					</div>
 				</div>
 			<?php elseif($cat->cat_name == "solutions exclusives"): ?>
 				<div id="top-solutions-exclusives">
 					<div id="solutions-icons">
-						<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu.svg" height="120" width="120" /><br/><div class="bloc-solutions-text"><span>Born</span>e de jeu<br/>inter<span>active</span></div><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
-						<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie.svg" height="120" width="120" /><br/><div class="bloc-solutions-text">Bor<span>ne</span><br/>selfi<span>e</span></div><a href="/category/solutions-exclusives/"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu.svg" height="120" width="120" /><br/><div class="bloc-solutions-text"><span>Born</span>e de jeu<br/>inter<span>active</span></div><a href="#anchor1"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
+						<div class="bloc-solutions bloc-solutions-bis"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie.svg" height="120" width="120" /><br/><div class="bloc-solutions-text">Bor<span>ne</span><br/>selfi<span>e</span></div><a href="#anchor2"><div class="arrow-link"><img class="arrow-down-img" src="/wp-content/themes/twentyseventeen-child/assets/images/Arrow_down.svg" /></div></a></div>
 					</div>
 				</div>
 
@@ -52,9 +52,13 @@ $cat = $cat[0]; ?>
 			<?php
 			if ( have_posts() ) : ?>
 			<?php
+			$i = 0;
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
+			while ( have_posts() ) :
+				$i++;
+				$anchor = "[sta_anchor id='anchor$i' class='anchors' /]";
+				echo	do_shortcode($anchor);
+				the_post();
 			/*
 			* Include the Post-Format-specific template for the content.
 			* If you want to override this in a child theme, then include a file

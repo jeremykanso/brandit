@@ -20,15 +20,24 @@ get_header(); ?>
 			<h2 class="front-page-title">nos réalisations</h2>
 			<div class="title-border"></div>
 			<div id="portfolio">
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test.jpg" /></div>
-				<div class="portfolio-elems"><img src="/wp-content/themes/twentyseventeen-child/assets/images/test2.jpg" /></div>
+				<?php
+				$args = array(
+					'cat' => 5,
+					'posts_per_page' => 9
+				);
+				$the_query = new WP_Query( $args );
+
+				// The Loop
+				if ( $the_query->have_posts() ) {
+					$i = 0;
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post();
+						$the_actual_field = get_field('mini_case_study');
+						$actual_perma = get_permalink();
+						echo	"<div class='portfolio-elems'><a href='$actual_perma'><img src='$the_actual_field'/></a></div>";
+					}
+				}
+				?>
 			</div>
 		</div>
 		<div id="agency-section">
@@ -57,28 +66,27 @@ get_header(); ?>
 					En savoir +
 				</div>
 			</a>
-			</div>
-			<div id="clients-container">
-				<div id="clients-title-line"></div>
-				<h3>Quelques <br/><span>clients</span></h3>
-				<div id="clients-sub">
-					<div id="clients-list">
-						<?php echo do_shortcode("[slide-anything id='6']"); ?>
-
-				</div>
+		</div>
+		<div id="clients-container">
+			<div id="clients-title-line"></div>
+			<h3>Quelques <br/><span>clients</span></h3>
+			<div id="clients-sub">
+				<div id="clients-list">
+					<?php echo do_shortcode("[slide-anything id='6']"); ?>
 				</div>
 			</div>
 		</div>
+	</div>
 
 
 
-		<?php // Show the selected frontpage content.
-		/*		if ( have_posts() ) :
-		while ( have_posts() ) : the_post();
-		get_template_part( 'template-parts/page/content', 'front-page' );
-	endwhile;
-	else :
-	get_template_part( 'template-parts/post/content', 'none' );
+	<?php // Show the selected frontpage content.
+	/*		if ( have_posts() ) :
+	while ( have_posts() ) : the_post();
+	get_template_part( 'template-parts/page/content', 'front-page' );
+endwhile;
+else :
+get_template_part( 'template-parts/post/content', 'none' );
 endif; ?>
 
 <?php

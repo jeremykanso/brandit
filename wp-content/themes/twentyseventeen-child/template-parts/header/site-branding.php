@@ -10,7 +10,9 @@
 
 ?>
 
-
+<?php
+$cat = get_the_category();
+$cat = $cat[0]; ?>
 
 			<?php if ( is_front_page() ) : ?>
 				<div class="site-branding">

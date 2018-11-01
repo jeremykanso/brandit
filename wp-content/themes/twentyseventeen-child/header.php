@@ -23,6 +23,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div class="sticky-site-branding">
+		<a href="/"><img src="/wp-content/themes/twentyseventeen-child/assets/images/sticky-logo.png" /></a>
+	</div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 

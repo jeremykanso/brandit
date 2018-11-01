@@ -21,69 +21,69 @@ $cat = $cat[0]; ?>
 
 	<?php if ($cat->cat_name != "case studies"): ?>
 
-	<div class="background-category-item category-item-<?php the_ID(); ?>"></div>
-	<div class="yellow-box">
-		<header class="entry-header">
-			<div class="title-icon title-icon-<?php the_ID(); ?>">
-				<?php
-				$i = get_the_ID();
+		<div class="background-category-item category-item-<?php the_ID(); ?>"></div>
+		<div class="yellow-box">
+			<header class="entry-header">
+				<div class="title-icon title-icon-<?php the_ID(); ?>">
+					<?php
+					$i = get_the_ID();
 
-				switch ($i) {
-					case 14:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Brand_Activation.svg" />';
-					break;
-					case 16:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/pub.svg" />';
-					break;
-					case 18:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Creation_production.svg" />';
-					break;
-					case 24:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Digital.svg" />';
-					break;
-					case 22:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Business_Development.svg" />';
-					break;
-					case 28:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie_white.svg" />';
-					break;
-					case 26:
-					echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu_white.svg" />';
-					break;
+					switch ($i) {
+						case 14:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Brand_Activation.svg" />';
+						break;
+						case 16:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/pub.svg" />';
+						break;
+						case 18:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Creation_production.svg" />';
+						break;
+						case 24:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Digital.svg" />';
+						break;
+						case 22:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Business_Development.svg" />';
+						break;
+						case 28:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Selfie_white.svg" />';
+						break;
+						case 26:
+						echo '<img src="/wp-content/themes/twentyseventeen-child/assets/images/Jeu_white.svg" />';
+						break;
 
-					default;
-					echo "icon";
-					break;
-				}
+						default;
+						echo "icon";
+						break;
+					}
+					?>
+
+					<?php
+					/*	if ( is_sticky() && is_home() ) :
+					echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
+				endif;*/
 				?>
 
 				<?php
-				/*	if ( is_sticky() && is_home() ) :
-				echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
-			endif;*/
-			?>
+				/*	if ( 'post' === get_post_type() ) {
+				echo '<div class="entry-meta">';
+				if ( is_single() ) {
+				twentyseventeen_posted_on();
+			} else {
+			echo twentyseventeen_time_link();
+			twentyseventeen_edit_link();
+		};
+		echo '</div><!-- .entry-meta -->';
+	};*/
 
-			<?php
-			/*	if ( 'post' === get_post_type() ) {
-			echo '<div class="entry-meta">';
-			if ( is_single() ) {
-			twentyseventeen_posted_on();
-		} else {
-		echo twentyseventeen_time_link();
-		twentyseventeen_edit_link();
-	};
-	echo '</div><!-- .entry-meta -->';
-};*/
+	if ( is_single() ) {
+		the_title( '<h1 class="entry-title">', '</h1>' );
+	} elseif ( is_front_page() && is_home() ) {
+		the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+	} else {
 
-if ( is_single() ) {
-	the_title( '<h1 class="entry-title">', '</h1>' );
-} elseif ( is_front_page() && is_home() ) {
-	the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
-} else {
-
-	the_title( '<h2 class="entry-title">', '</h2>' );
-}
-?>
+		the_title( '<h2 class="entry-title">', '</h2>' );
+	}
+	?>
 
 </div>
 <?php	if ($cat->cat_name == "expertises"): ?>
@@ -133,30 +133,51 @@ if ( is_single() ) {
 
 	<div id="top-cover-case-study">
 		<div id="titles-block">
-		<?php	the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<h2><?php the_field("sous_titre_case_study"); ?></h2>
+			<?php	the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<h2><?php the_field("sous_titre_case_study"); ?></h2>
 		</div>
-	<div id="background-case-study" style="background-image:url('<?php the_field("background_image_case_study"); ?>')">
+		<div id="background-case-study" style="background-image:url('<?php the_field("background_image_case_study"); ?>')">
+		</div>
 	</div>
+	<div id="client-section" style="background-image: url(<?php the_field("background_image_client"); ?>)">
+		<div id="blue-box" style="background-color:<?php the_field('couleur_background_client'); ?>">
+			<h3>Client</h3>
+			<h2><?php the_field("titre_client"); ?></h2>
+			<div id="blue-box-text">
+				<?php the_field("texte_client"); ?>
+			</div>
+		</div>
+	</div>
+	<div id="bottom-case-study" style="background-color:<?php the_field('couleur_background_territoire'); ?>">
+		<div id="bottom-case-study-sub-one">
+			<div id="territoire">
+				<div class="case-study-icons territoire-icon"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Territoire.svg" /></div>
+				<h3>Territoire</h3>
+				<p><?php the_field("territoire"); ?></p>
+			</div>
+			<div id="brief">
+				<div class="case-study-icons brief-icon"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Brief.svg" /></div>
+				<h3>Brief</h3>
+				<p><?php the_field("brief"); ?></p>
+			</div>
+		</div>
+		<div id="bottom-case-study-sub-two">
+			<div id="actions">
+				<div class="case-study-icons actions-icon"><img src="/wp-content/themes/twentyseventeen-child/assets/images/Actions.svg" /></div>
+				<h3>Actions</h3>
+				<?php the_field("actions"); ?>
+			</div>
+		</div>
+
+
 	</div>
 
+	<div id="carousel-case-study">
+		<?php
+		$test = get_field('carousel_case_study');
+		echo do_shortcode($test); ?>
 
-<?php the_field("titre_client"); ?>
-<?php the_field("texte_client"); ?>
-<?php the_field("couleur_background_client"); ?>
-<?php the_field("background_image_client"); ?>
-<?php the_field("territoire"); ?>
-<?php the_field("brief"); ?>
-<?php the_field("actions"); ?>
-<?php the_field("couleur_background_territoire"); ?>
-<?php the_field("carousel_case_study"); ?>
-
-
-
-
-
-<?php the_field("mini_case_study"); // TO DO : intégrer en page d'accueil ?>
-
+	</div>
 
 <?php endif; ?>
 
@@ -180,9 +201,9 @@ if ( is_single() ) {
 
 
 <?php
-if ( is_single() ) {
+/* if ( is_single() ) {
 	twentyseventeen_entry_footer();
-}
+}*/
 ?>
 
 

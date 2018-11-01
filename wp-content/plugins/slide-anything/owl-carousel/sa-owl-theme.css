@@ -30,22 +30,22 @@
 }
 .sa_owl_theme .owl-dots .owl-dot span {
 	display:inline-block !important;
-	border-style:none !important;
-	background-color:rgba(0,0,0,0.2) !important;
-	width:10px !important;
-	height:10px !important;
+	border-style:none;
+	background-color:rgba(0,0,0,0.2);
+	width:10px;
+	height:10px;
 	border-radius:50% !important;
-	margin:0px 3px !important;
-	transition:all .3s ease-in-out !important;
-	-webkit-transition:all .3s ease-in-out !important;
-	-moz-transition:all .3s ease-in-out !important;
-	-o-transition:all .3s ease-in-out !important;
+	margin:0px 3px;
+	transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
 }
 .sa_owl_theme .owl-dots .active span {
-	background-color:rgba(0,0,0,0.5) !important;
+	background-color:rgba(0,0,0,0.5) ;
 }
 .sa_owl_theme .owl-dots .owl-dot span:hover {
-	background-color:rgba(0,0,0,0.5) !important;
+	background-color:rgba(0,0,0,0.5);
 }
 .owl-pagination-true {
 	margin-bottom:22px !important;
